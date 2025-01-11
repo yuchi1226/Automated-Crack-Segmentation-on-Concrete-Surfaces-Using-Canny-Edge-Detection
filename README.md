@@ -1,4 +1,3 @@
-# Automated-Crack-Segmentation-on-Concrete-Surfaces-Using-Canny-Edge-Detection
 # 使用 Canny 邊緣檢測對混凝土表面進行自動裂縫分割
 
 # Abstract
@@ -10,4 +9,11 @@
 在本研究中，我們提出了一種新的方法，透過結合兩種提案方法（Proposed Approach 1 和 Proposed Approach 2）的優勢來提升粗糙混凝土表面裂縫檢測的準確性與穩健性。結合方法的核心目標是發揮各自技術的特點，進一步改善檢測結果。
 
 提案方法 1（PA1）注重利用色彩資訊及自動化閾值處理進行邊緣檢測，其具體步驟如下：
+![](https://github.com/yuchi1226/Automated-Crack-Segmentation-on-Concrete-Surfaces-Using-Canny-Edge-Detection/blob/main/images/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-01-11%20162253.png)
+
+1. 影像預處理：將輸入影像裁剪為固定大小，並進行對比增強以突出裂縫區域。
+2. 色彩空間轉換：將 RGB 影像轉換為 HSV 色彩空間，分離亮度與色彩資訊。
+3. 閾值分割：使用 Otsu 方法計算全局閾值，並結合多重閾值進行更細緻的二值化處理。
+4. 邊緣檢測與膨脹：應用 Canny 邊緣檢測後，透過中值濾波與形態學操作增強裂縫邊界。
+
 
